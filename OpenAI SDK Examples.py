@@ -17,6 +17,7 @@ from sendgrid.helpers.mail import Mail, Email, To, Content
 import asyncio
 
 
+
 def send_test_email():
     """Test email sending functionality"""
     sg = sendgrid.SendGridAPIClient(api_key=os.environ.get('SENDGRID_API_KEY'))
@@ -334,7 +335,7 @@ Crucial Rules:
 
 
 async def main():
-    """Main function to run the agent demonstrations"""
+    """Main function to run the agent demonstrations - get the api keys as variable"""
     load_dotenv(override=True)
 
     # Test email functionality
